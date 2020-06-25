@@ -1,42 +1,44 @@
-'''
+#demo function
 x,y,z = 10,5,4
-def mulfunc():   #demo function
+def mulfunc():   
     p = x*y+z
     print('the value of p is:',p)
 mulfunc()
 
+
+#Check int
 a=2
-print(a)   #Check int
+print(a)   
 print(type(a))
 
-
+#Check int
 b=922337203685477807
-print(b)                #Check int
+print(b)                
 print(type(b))
 
-
+ #Floating point
 pi=3.14
-print(pi)  #Floating point
+print(pi) 
 print(type(pi))
 
-
+ #sting
 name = 'Jhon Deo'
-print(name)    #sting
+print(name)   
 print(type(name))
 
 
-
+ #Boolean
 x = True
-print(x)  #Boolean
+print(x) 
 print(type(x))
 
 
-
+#Null data type
 x=None
-print(x)  #Null data type
+print(x)  
 print(type(x))
 
-
+#Show python keywords
 import keyword
 print(keyword.kwlist)
 
@@ -46,22 +48,25 @@ def my_function():
     return a
 print(my_function())
 
+#tuple:An ordered collection of n values of any type(n> =0)
+
 a = (1, 2, 3)
-b = ('a', 1, 'python',(1, 2))    #tuple:An ordered collection of n values of any type(n> =0)
+b = ('a', 1, 'python',(1, 2))    
 b[2] = 'else'
 
+
+#list:An ordered collection of  values(n> = 0)
 a = [1, 2, 3]
-b = ['a', 1, 'python', [1,2]]    #list:An ordered collection of  values(n> = 0)
-b[2] = 'elseb'
+b = ['a', 1, 'python', [1,2]]    
+b[2] = 'esab'
 print(b[2])
 print(b)
 
-
+#ValueError: invalid literal for int() with base 10: '123.456'
 a = '123.456'
 b = float(a)
 d = int(b)
-
-print(b)  #ValueError: invalid literal for int() with base 10: '123.456'
+print(b)  
 print(d)
 
 
@@ -79,7 +84,7 @@ x == [1, 2]      #False now,since an item was added to the list..
 print(x)
 
 
-# Section 1.5 : Collection Types
+#  Collection Types
 
  #Lists
 int_List = [1, 2, 3]
@@ -88,14 +93,15 @@ print(int_List)
 string_List = ['hello', 'Arman']
 print(string_List)
 
-empty_list=[]   #empty
+#empty list
+empty_list=[]   
 print(empty_list)
 
 mixed_List = [1, 'abc', True, 2.35, None]
 print(mixed_List)
 
-#Nested_list
 
+#Nested_list
 Nested_list = [['a', 'b', 'c'],[1, 2, 3], 2]
 print(Nested_list[2])
 print(Nested_list)
@@ -103,51 +109,36 @@ print(Nested_list)
 
 
 
-names = ['arman','mahdi','nafiul','arif','sajjad']
+names = ['arman','mahdi','nafiul','maruf','tahsin']
 #print(names[1])
 #print(names[4])
 #print(names[-1])
 #print(names[-4])
 
-#names.append('nasrin')
+#names.append('tania')
 names.insert(1,'aladin')
 print(names)
-
-
-a= pow(2,3)
-print(a)
-
-
-a = dir(__builtins__)
-print(a)
-
-
-
-help(max)   # to know the functionality of any function,we can use built in function help.
-print(help)
-
-
 
 import math
 a = math.sqrt(16)
 print(a)
 
 
-#names = ['a','b','c']
-#print(names[2])
-#print(names[-1])
-#names.append('d')
-#print(names)
-#names.insert(1,'s')
-#print(names)
+names = ['a','b','c']
+print(names[2])
+print(names[-1])
+names.append('d')
+print(names)
+names.insert(1,'s')
+print(names)
 
-#names.remove('c')
-#names.index('b')
-#print(names)
+names.remove('c')
+names.index('b')
+print(names)
 
-
-#a = len(names) #count length of list
-#print(a)
+#count length of list
+a = len(names) 
+print(a)
 
 
 
@@ -162,7 +153,6 @@ print(a)
 
 
 #tuple
-
 ip_adresss = ('10.20.30.40',8080)
 print(ip_adresss)
 print(type(ip_adresss))
@@ -171,8 +161,8 @@ one_member = tuple(['one_member',])
 print(one_member)
 
 
-#Dictionaries
 
+#Dictionaries
 state_capitals = {
 
     'dhaka' : 'bangladesh',
@@ -191,13 +181,15 @@ for k in state_capitals.keys():
 
 #User_Input(Interactive input)
 
-#name = input('what is your name?')
-#print(name)
+name = input('what is your name?')
+print(name)
 
-#x = input('write a number:')
+x = input('write a number:')
 
-#float(x)/2
-#print(int(x)/2)
+float(x)/2
+print(int(x)/2)
+
+
 
 dir(__builtins__)
 #help(max)
@@ -206,12 +198,7 @@ import math
 dir(math)
 
 
-
-
-
-
-
-#chapter-28:Tuple
+#chapter Tuple
 
 t = ('a','b','c')
 print(t)
@@ -237,13 +224,14 @@ tuple1 = ('a','b','c')
 tuple2 = ('1','2','3')
 tuple3 = ('a','b','c')
 
-#print(cmp(tuple2, tuple1))     error ase..
 
-#print(len(tuple1))         #3
-#print((max(tuple1)),(min(tuple1)))
 
+print(len(tuple1))         #3
+print((max(tuple1)),(min(tuple1)))
+
+#convert a list into tuple
 list = [1,2,3,4,5]
-print(tuple(list))        convert a list into tuple
+print(tuple(list))        
 
 
 tuple1 = ('a','b','c')
@@ -252,8 +240,8 @@ tuple4 = (1,2,3)
 
 print(tuple1 + tuple2)
 print(tuple4[:-1])
-
-colors = 'red','green','blue'     #reversing Elements
+ #reversing Elements
+colors = 'red','green','blue'    
 #rev = colors[::-1]
 #colors = rev
 
@@ -267,7 +255,7 @@ print(rev)
 #set => sets are Unordered collections of Unique objects..two types..
 
 basket = {'apple','mango','licci','apple','ba2na'}
-print(basket)    #dduplicates will be removed..
+print(basket)    #duplicates will be removed..
 print(type(basket))
 
 a = set('ababraded')
@@ -285,10 +273,10 @@ print(type(b))
 #Intersection
 
 #c = {1,2,3,4,5}.Intersection({3,4,5,6})
-#c = {1,2,3,4,5} & {3,4,5,6}
-#print(c)
-#{frozenset({1,2}), frozenset({3,4})}
-#print(d)
+c = {1,2,3,4,5} & {3,4,5,6}
+print(c)
+{frozenset({1,2}), frozenset({3,4})}
+print(d)
 
 
 c = {1,2,3,4,5}
@@ -301,30 +289,19 @@ print(c.symmetric_difference(d))
 
 
 
-#Dictionaries
+#Chapter Dictionaries
 
 
-#d = {}
-#d = {'key': 'values'}
-#d = {k:v for k,v in [('key','value',)]}   #dict comprehensions..
-#print(d)
-
-#d = dict()
-#d = dict(key ='value')
-#d = dict([('key','value')])
-d = dict(**otherdict)
+d = {}
+d = {'key': 'values'}
+d = {k:v for k,v in [('key','value',)]}   #dict comprehensions..
 print(d)
 
-
-
-
-
-
-
-
-
-
-
+d = dict()
+d = dict(key ='value')
+d = dict([('key','value')])
+d = dict(**otherdict)
+print(d)
 
 
 
@@ -334,8 +311,8 @@ print(d)
 
 a, b  = 1, 2
 print(a + b)
-#print(a += b) problem hosse..
 
+#import
 import operator
 
 print(operator.iadd(a,b))
@@ -420,6 +397,7 @@ print(d)
 
 
 #bitwise Operators
+
 print(bin(60 & 30))  #AND
 print(bin(60 ^ 30))  #XOR
 print((~2))          #NOT
@@ -443,7 +421,7 @@ print(a)
 
 
 
-# nolocal variables
+# nonlocal variables
 def counter():
         num = 0
         def incrementer():
@@ -594,7 +572,7 @@ if 'a':
     print('True')
 else:
     print('False')
-'''
+
 
 
 common_divisors(12,24)
