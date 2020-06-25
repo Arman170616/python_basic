@@ -1,11 +1,3 @@
-#demo function
-x,y,z = 10,5,4
-def mulfunc():   
-    p = x*y+z
-    print('the value of p is:',p)
-mulfunc()
-
-
 #Check int
 a=2
 print(a)   
@@ -43,10 +35,20 @@ import keyword
 print(keyword.kwlist)
 
 
+#demo function
+x,y,z = 10,5,4
+def mulfunc():   
+    p = x*y+z
+    print('the value of p is:',p)
+mulfunc()
+
+#
+
 def my_function():
     a = 2
     return a
 print(my_function())
+
 
 #tuple:An ordered collection of n values of any type(n> =0)
 
@@ -61,7 +63,6 @@ b = ['a', 1, 'python', [1,2]]
 b[2] = 'esab'
 print(b[2])
 print(b)
-
 #ValueError: invalid literal for int() with base 10: '123.456'
 a = '123.456'
 b = float(a)
