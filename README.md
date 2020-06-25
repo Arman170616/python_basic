@@ -1,2 +1,2 @@
-# python programming
+# Python Programming
 python for noobs
